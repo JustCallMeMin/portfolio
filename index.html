@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Backend/Go intern portfolio for JustCallMeMin.">
-    <title>JustCallMeMin | Backend/Go Intern</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23134e4a'/%3E%3Cpath d='M9 21V11h3l4 5 4-5h3v10h-3v-6l-4 5-4-5v6z' fill='white'/%3E%3C/svg%3E">
+    <meta name="description" content="Backend and Go intern portfolio for JustCallMeMin.">
+    <title>JustCallMeMin | Backend / Go Intern</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e3b43'/%3E%3Cpath d='M8 22V10h4l4 5 4-5h4v12h-4v-6l-4 5-4-5v6z' fill='%23f7f4ea'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">JustCallMeMin</a>
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span>JM</span>
+        JustCallMeMin
+      </a>
       <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -22,121 +25,194 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Backend/Go Intern Candidate</p>
-          <h1 id="hero-title">Building reliable backend systems with clear tests and docs.</h1>
-          <p>
-            I focus on Go services, CLI tools, repository analysis, workflow-oriented
-            backend projects, persistence, recovery flows, and developer-facing documentation.
+          <p class="eyebrow">Backend / Go Intern Candidate</p>
+          <h1 id="hero-title">I build small backend systems that reviewers can run, test, and inspect.</h1>
+          <p class="hero-summary">
+            Go-focused developer interested in backend internships. Strongest signal:
+            service boundaries, persistence, tests, CLI workflows, recovery flows, and
+            documentation that explains real trade-offs.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="https://github.com/JustCallMeMin">GitHub</a>
-            <a class="button secondary" href="#projects">View Projects</a>
+            <a class="button primary" href="https://github.com/JustCallMeMin">View GitHub</a>
+            <a class="button secondary" href="#projects">See Projects</a>
           </div>
         </div>
-        <aside class="terminal" aria-label="Backend focus summary">
-          <div class="terminal-bar">
+
+        <aside class="profile-panel" aria-label="Candidate summary">
+          <div class="availability">
             <span></span>
-            <span></span>
-            <span></span>
+            Open to intern roles
           </div>
-          <pre><code>$ go test ./...
-ok  backend systems
-ok  recovery flows
-ok  docs that run</code></pre>
+          <dl>
+            <div>
+              <dt>Target</dt>
+              <dd>Backend Intern</dd>
+            </div>
+            <div>
+              <dt>Main Stack</dt>
+              <dd>Go, PostgreSQL, HTTP, WebSocket</dd>
+            </div>
+            <div>
+              <dt>Proof</dt>
+              <dd>Runnable projects, tests, docs, Docker flows</dd>
+            </div>
+          </dl>
+          <div class="terminal" aria-label="Portfolio verification sample">
+            <pre><code>$ go test ./...
+ok  api
+ok  storage
+ok  recovery
+
+$ docker compose up
+service ready</code></pre>
+          </div>
         </aside>
       </section>
 
-      <section id="about" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Backend-first, product-aware.</h2>
+      <section class="metrics" aria-label="Portfolio highlights">
+        <div>
+          <strong>2</strong>
+          <span>backend-heavy projects</span>
         </div>
-        <p class="wide-text">
-          I build portfolio projects where reviewers can inspect the architecture,
-          run real commands, and understand trade-offs. My strongest work is in Go:
-          service boundaries, persistence, tests, CLI workflows, and technical docs.
-        </p>
+        <div>
+          <strong>Go</strong>
+          <span>primary language</span>
+        </div>
+        <div>
+          <strong>Tests</strong>
+          <span>unit and workflow coverage</span>
+        </div>
+        <div>
+          <strong>Docs</strong>
+          <span>setup, architecture, trade-offs</span>
+        </div>
       </section>
 
       <section id="projects" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Featured Projects</p>
-          <h2>Two projects built for backend signal.</h2>
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects written like engineering evidence, not class assignments.</h2>
         </div>
+
         <div class="project-grid">
-          <article class="project-card">
-            <div>
+          <article class="project-card featured">
+            <div class="project-top">
               <p class="project-type">Repository intelligence</p>
               <h3>RepoCompass</h3>
               <p>
-                Open-source repository analysis and onboarding engine. It scans codebases,
-                checks engineering practice signals, and presents health findings through
-                CLI, API, persistence, and dashboard surfaces.
+                Codebase analysis and onboarding engine. It scans repositories, detects
+                engineering practice signals, and presents findings through CLI, API,
+                persistence, and dashboard surfaces.
               </p>
-              <p class="project-status">Status: Active portfolio project</p>
-              <p class="project-proof">Proof: CLI scan flow, Docker setup, Go tests, and repository quality docs.</p>
             </div>
-            <ul>
-              <li>Go CLI and HTTP API.</li>
-              <li>PostgreSQL persistence and migrations.</li>
-              <li>Experimental Next.js dashboard.</li>
-              <li>Analyzer and report architecture.</li>
-            </ul>
-            <a class="text-link" href="https://github.com/JustCallMeMin/repoCompass">Open repository</a>
+            <div class="project-body">
+              <ul>
+                <li>Built Go CLI and HTTP API around analyzer workflow.</li>
+                <li>Used PostgreSQL persistence and migration-oriented structure.</li>
+                <li>Documented setup, repository checks, and quality signals.</li>
+                <li>Kept project runnable through Docker and test commands.</li>
+              </ul>
+              <div class="tags" aria-label="RepoCompass technologies">
+                <span>Go</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>CLI</span>
+              </div>
+            </div>
+            <a class="text-link" href="https://github.com/JustCallMeMin/repoCompass">Open RepoCompass</a>
           </article>
 
           <article class="project-card">
-            <div>
+            <div class="project-top">
               <p class="project-type">Real-time collaboration</p>
               <h3>Syncraft</h3>
               <p>
-                Backend workflow prototype with a real-time editing demo. It focuses on
-                convergence, deterministic replay, reconnect recovery, websocket sessions,
-                and testable operation-based editing behavior.
+                Real-time editing backend prototype focused on convergence, deterministic
+                replay, reconnect recovery, websocket sessions, and testable operations.
               </p>
-              <p class="project-status">Status: Focused backend workflow prototype</p>
-              <p class="project-proof">Proof: Go tests, demo workflow, validation scenarios, and recovery notes.</p>
             </div>
-            <ul>
-              <li>Go websocket demo server.</li>
-              <li>Client/server protocol boundaries.</li>
-              <li>Operation log and recovery model.</li>
-              <li>Concurrency and browser behavior tests.</li>
-            </ul>
-            <a class="text-link" href="https://github.com/JustCallMeMin/syncraft">Open repository</a>
+            <div class="project-body">
+              <ul>
+                <li>Defined client/server protocol boundaries.</li>
+                <li>Built websocket demo server and recovery workflow.</li>
+                <li>Designed operation log behavior for replay scenarios.</li>
+                <li>Validated concurrency and browser behavior with tests.</li>
+              </ul>
+              <div class="tags" aria-label="Syncraft technologies">
+                <span>Go</span>
+                <span>WebSocket</span>
+                <span>Recovery</span>
+                <span>Testing</span>
+              </div>
+            </div>
+            <a class="text-link" href="https://github.com/JustCallMeMin/syncraft">Open Syncraft</a>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section">
+      <section id="skills" class="section split-section">
         <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Practical backend toolkit.</h2>
+          <p class="eyebrow">Skills Matrix</p>
+          <h2>Backend toolkit mapped to intern-role expectations.</h2>
         </div>
-        <div class="skill-grid">
-          <div>
-            <h3>Backend</h3>
-            <p>Go, HTTP APIs, WebSocket, CLI tools, service boundaries.</p>
-          </div>
-          <div>
-            <h3>Data</h3>
-            <p>PostgreSQL, migrations, persistence interfaces, replay models.</p>
-          </div>
-          <div>
-            <h3>Quality</h3>
-            <p>Unit tests, integration tests, fixtures, docs, Makefile workflows.</p>
-          </div>
-          <div>
+        <div class="skill-list">
+          <article>
+            <h3>Backend Development</h3>
+            <p>Go, HTTP APIs, WebSocket, CLI tools, service boundaries, error handling.</p>
+          </article>
+          <article>
+            <h3>Data and Reliability</h3>
+            <p>PostgreSQL, migrations, persistence interfaces, replay models, recovery flows.</p>
+          </article>
+          <article>
+            <h3>Engineering Quality</h3>
+            <p>Unit tests, integration tests, fixtures, Docker setup, readable technical docs.</p>
+          </article>
+          <article>
             <h3>Frontend Context</h3>
             <p>React, Next.js, TypeScript, Tailwind CSS for backend-backed prototypes.</p>
-          </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Learning Path</p>
+          <h2>How I approach backend work.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Start from runnable behavior</h3>
+              <p>Prefer real commands, small workflows, and visible output before polishing UI.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Separate boundaries early</h3>
+              <p>Keep CLI, API, storage, analyzer, and docs responsibilities clear enough to review.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Use tests as proof</h3>
+              <p>Cover core behavior, recovery paths, and edge cases that make backend projects credible.</p>
+            </div>
+          </article>
         </div>
       </section>
 
       <section id="contact" class="section contact">
-        <div class="section-heading">
+        <div>
           <p class="eyebrow">Contact</p>
-          <h2>Open to Backend/Go intern roles.</h2>
+          <h2>Open to Backend / Go intern opportunities.</h2>
+          <p>
+            Best fit: teams that value clear ownership, testable systems, practical docs,
+            and incremental backend delivery.
+          </p>
         </div>
         <div class="contact-links">
           <a href="https://github.com/JustCallMeMin">GitHub</a>
