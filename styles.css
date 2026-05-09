@@ -224,6 +224,17 @@ nav a:hover,
   color: var(--muted);
 }
 
+.project-status,
+.project-proof {
+  margin: 12px 0 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.project-status {
+  font-weight: 800;
+}
+
 .project-card ul {
   margin: 0;
   padding-left: 20px;
