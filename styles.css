@@ -1,17 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #f6faff;
+  --bg: hsl(169, 60%, 99%);
   --surface: #ffffff;
-  --surface-soft: #fbfdff;
-  --surface-tint: #f4faff;
+  --surface-soft: hsl(169, 70%, 98%);
+  --surface-tint: hsl(169, 70%, 96%);
   --ink: #111111;
   --muted: #666666;
   --soft: #8a8a8a;
-  --line: #d7e7f5;
-  --accent: #0e87eb;
-  --accent-dark: #0a4f8f;
-  --accent-soft: #eaf5ff;
-  --focus: rgba(14, 135, 235, 0.28);
+  --line: hsl(169, 12%, 88%);
+  --accent: hsl(166, 30%, 56%);
+  --accent-dark: hsl(167, 13%, 43%);
+  --accent-soft: hsl(169, 70%, 96%);
+  --focus: hsla(166, 30%, 56%, 0.28);
 }
 
 * {
@@ -187,7 +187,7 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 12px 22px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--accent);
   border-radius: 30px;
   font-size: 0.92rem;
   font-weight: 700;
@@ -196,7 +196,7 @@ h3 {
 }
 
 .button.primary {
-  background: var(--ink);
+  background: var(--accent);
   color: var(--surface);
 }
 
@@ -207,7 +207,7 @@ h3 {
 
 .button.secondary {
   background: transparent;
-  color: var(--ink);
+  color: var(--accent-dark);
 }
 
 .button.secondary:hover {
